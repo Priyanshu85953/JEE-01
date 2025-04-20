@@ -161,10 +161,11 @@ header img {
     font-family: Tahoma, Geneva, sans-serif;
     padding: 2px 20px 2px 0px;
 }
-#question_area_scrollable{
-	background-image: url("download.png");
-    overflow-y: scroll;
-    height: 1400px;
+#question_area_scrollable {
+    background-image: url("download.png");
+    overflow-y: auto; /* Change to auto to show scrollbar only when needed */
+    max-height: 70vh; /* Set a maximum height relative to viewport height */
+    padding-bottom: 20px; /* Add padding to ensure content at the bottom is accessible */
 }
 /* Styles for desktop using media queries */
 @media (min-width: 1024px) {
